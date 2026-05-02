@@ -50,3 +50,6 @@ Vivir frente a tres contenedores mal gestionados en la Ciudad de Buenos Aires si
 Durante más de un mes, se han ingresado reclamos diarios, documentados con material audiovisual, a través de los canales oficiales del Gobierno de la Ciudad (Boti / SUACI). El resultado es siempre el mismo: respuestas automatizadas y tickets que se cierran desde un escritorio, mientras en la calle el camión compactador sigue marcando 95 dBA a la madrugada. 
 
 Este sitio compila la evidencia probatoria de la contravención (ruidos molestos e insalubridad) y la omisión del Estado. Todo el material aquí expuesto se encuentra a disposición de la Defensoría del Pueblo, el Ente Regulador y el Ministerio Público Fiscal de CABA."
+
+## 6. Redes Sociales
+- **Cuenta de X (Twitter):** [https://x.com/BotiNoLimpiaBA](https://x.com/BotiNoLimpiaBA)
