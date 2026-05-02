@@ -52,6 +52,20 @@ def organize_images():
         shutil.copy(src, dst)
         print(f"Copied image: {img} to assets/img/logs/")
 
+    # Also copy specific images from WhatsApp folder
+    specific_images = [
+        "IMG-20260219-WA0011.jpg",
+        "IMG-20260404-WA0006.jpg",
+        "IMG-20260404-WA0010.jpg"
+    ]
+    whatsapp_dir = os.path.join(PROMPTS_DATA_DIR, 'Chat de WhatsApp con Boti CABA')
+    for img in specific_images:
+        src = os.path.join(whatsapp_dir, img)
+        dst = os.path.join(IMG_LOGS_DIR, img)
+        if os.path.exists(src):
+            shutil.copy(src, dst)
+            print(f"Copied specific image: {img} to assets/img/logs/")
+
 def parse_whatsapp_chat():
     chat_file = os.path.join(PROMPTS_DATA_DIR, 'Chat de WhatsApp con Boti CABA', 'Chat de WhatsApp con Boti CABA.txt')
     logs = []

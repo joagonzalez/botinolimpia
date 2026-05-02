@@ -66,7 +66,10 @@ function loadGallery() {
         "20260423_163719.jpg",
         "20260411_201514.jpg",
         "20260410_202250.jpg",
-        "20260429_200636.jpg"
+        "20260429_200636.jpg",
+        "IMG-20260219-WA0011.jpg",
+        "IMG-20260404-WA0006.jpg",
+        "IMG-20260404-WA0010.jpg"
     ];
     
     const grid = document.getElementById('gallery-grid');
