@@ -1,0 +1,200 @@
+[
+    {
+        "id": "evt-19",
+        "date": "1/5/2026",
+        "time": "19:42",
+        "ticket": "00556082/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-18",
+        "date": "30/4/2026",
+        "time": "21:21",
+        "ticket": "00554364/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-vid-3",
+        "date": "30/4/2026",
+        "time": "21:20",
+        "ticket": "N/A",
+        "dba": 85.6,
+        "youtube_id": "PfhZFV5p7kc",
+        "description": "Medición de decibeles del camión compactador (85.6 dBA)."
+    },
+    {
+        "id": "evt-17",
+        "date": "29/4/2026",
+        "time": "20:01",
+        "ticket": "00549283/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-16",
+        "date": "25/4/2026",
+        "time": "23:59",
+        "ticket": "00531267/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-15",
+        "date": "23/4/2026",
+        "time": "17:02",
+        "ticket": "00522849/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-14",
+        "date": "22/4/2026",
+        "time": "18:48",
+        "ticket": "00518147/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-13",
+        "date": "20/4/2026",
+        "time": "11:11",
+        "ticket": "00503976/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-12",
+        "date": "19/4/2026",
+        "time": "13:58",
+        "ticket": "00500107/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-vid-2",
+        "date": "18/4/2026",
+        "time": "05:30",
+        "ticket": "N/A",
+        "dba": 86,
+        "youtube_id": "OXpXjX4af_0",
+        "description": "El camión compactador volvió a pasar, sin dejar 4 horas seguidas de descanso."
+    },
+    {
+        "id": "evt-11",
+        "date": "18/4/2026",
+        "time": "01:40",
+        "ticket": "00496407/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-vid-1",
+        "date": "18/4/2026",
+        "time": "01:30",
+        "ticket": "N/A",
+        "dba": 86,
+        "youtube_id": "eZNkS6g_VSM",
+        "description": "El camión compactador pasó a vaciar los contenedores en medio de la madrugada."
+    },
+    {
+        "id": "evt-10",
+        "date": "14/4/2026",
+        "time": "20:52",
+        "ticket": "00480227/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-9",
+        "date": "12/4/2026",
+        "time": "14:45",
+        "ticket": "00466062/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-8",
+        "date": "11/4/2026",
+        "time": "20:22",
+        "ticket": "00464568/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-7",
+        "date": "10/4/2026",
+        "time": "20:29",
+        "ticket": "00461769/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-6",
+        "date": "4/4/2026",
+        "time": "12:24",
+        "ticket": "00431883/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-5",
+        "date": "19/2/2026",
+        "time": "14:32",
+        "ticket": "00222697/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-4",
+        "date": "19/2/2026",
+        "time": "14:29",
+        "ticket": "00222666/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-3",
+        "date": "27/1/2026",
+        "time": "11:04",
+        "ticket": "00114830/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-2",
+        "date": "20/11/2025",
+        "time": "10:47",
+        "ticket": "01255685/25",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    },
+    {
+        "id": "evt-1",
+        "date": "8/7/2024",
+        "time": "16:24",
+        "ticket": "01411914/24",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo reportado vía Boti"
+    }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotiNoLimpia - Bitácora de la Desidia</title>
+    <meta name="description" content="Bitácora ciudadana documentando la falta de recolección de residuos e insalubridad frente a domicilio en Palermo, CABA.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="logo-container">
+            <img src="assets/img/logo.png" alt="Boti No Limpia Logo Glitcheado" class="logo">
+        </div>
+        <div class="hero-content">
+            <h1>LA BITÁCORA DE LA DESIDIA</h1>
+            <h2>Cuando el bot no limpia.</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="manifesto card">
+            <h3>Manifiesto</h3>
+            <p>Vivir frente a tres contenedores mal gestionados en la Ciudad de Buenos Aires significa perder el derecho al descanso y a un ambiente salubre. Ante la falta de respuesta institucional, este espacio nace como un expediente público.</p>
+            <p>Durante más de un mes, se han ingresado reclamos diarios, documentados con material audiovisual, a través de los canales oficiales del Gobierno de la Ciudad (Boti / SUACI). El resultado es siempre el mismo: respuestas automatizadas y tickets que se cierran desde un escritorio, mientras en la calle el camión compactador sigue marcando 95 dBA a la madrugada.</p>
+            <p>Este sitio compila la evidencia probatoria de la contravención (ruidos molestos e insalubridad) y la omisión del Estado. Todo el material aquí expuesto se encuentra a disposición de la Defensoría del Pueblo, el Ente Regulador y el Ministerio Público Fiscal de CABA.</p>
+        </section>
+
+        <section class="gallery">
+            <h3>Galería de la Vergüenza</h3>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Se inyectarán las imágenes aquí -->
+            </div>
+        </section>
+
+        <section class="logbook card">
+            <h3>Registro de Incidentes y Reclamos</h3>
+            <div class="table-responsive">
+                <table id="logs-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Ticket / Trámite</th>
+                            <th>dBA</th>
+                            <th>Evidencia (Video)</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="logs-body">
+                        <!-- Generado por app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Documentación ciudadana |  Palermo, CABA.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
