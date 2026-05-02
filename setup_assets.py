@@ -44,7 +44,7 @@ def organize_images():
     
     # Sort by size descending
     images_with_size.sort(key=lambda x: x[1], reverse=True)
-    top_images = [x[0] for x in images_with_size[:4]]
+    top_images = [x[0] for x in images_with_size[:2]]
     
     for img in top_images:
         src = os.path.join(PROMPTS_DATA_DIR, img)

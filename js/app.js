@@ -61,10 +61,7 @@ async function loadLogs() {
 }
 
 function loadGallery() {
-    // Para simplificar, inyectamos los nombres de los archivos que sabemos que se copiaron
     const images = [
-        "20260423_163719.jpg",
-        "20260411_201514.jpg",
         "20260410_202250.jpg",
         "20260429_200636.jpg",
         "IMG-20260219-WA0011.jpg",
@@ -76,10 +73,22 @@ function loadGallery() {
     if (!grid) return;
     
     images.forEach(img => {
+        const a = document.createElement('a');
+        a.href = `assets/img/logs/${img}`;
+        a.target = "_blank"; // open full image in new tab
+
         const imgEl = document.createElement('img');
-        imgEl.src = `assets/img/logs/${img}`;
+        imgEl.src = `assets/img/logs/thumb_${img}`;
         imgEl.alt = "Evidencia de contenedores desbordados";
         imgEl.loading = "lazy";
-        grid.appendChild(imgEl);
+        
+        // Fallback just in case thumbnail generation failed or wasn't run
+        imgEl.onerror = function() {
+            this.onerror = null;
+            this.src = `assets/img/logs/${img}`;
+        };
+        
+        a.appendChild(imgEl);
+        grid.appendChild(a);
     });
 }
