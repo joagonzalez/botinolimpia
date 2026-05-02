@@ -69,10 +69,13 @@ function loadGallery() {
         "IMG-20260404-WA0010.jpg"
     ];
     
+    // Duplicamos el array para el efecto de scroll infinito (circular)
+    const displayImages = [...images, ...images];
+    
     const grid = document.getElementById('gallery-grid');
     if (!grid) return;
     
-    images.forEach(img => {
+    displayImages.forEach(img => {
         const a = document.createElement('a');
         a.href = `assets/img/logs/${img}`;
         a.target = "_blank"; // open full image in new tab
