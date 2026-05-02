@@ -1,5 +1,23 @@
 [
     {
+        "id": "evt-vid-5",
+        "date": "2/5/2026",
+        "time": "05:33",
+        "ticket": "N/A",
+        "dba": 89,
+        "youtube_id": "ep6idf3lxIA",
+        "description": "Evento de ruido o recolección indebida registrado con video."
+    },
+    {
+        "id": "evt-vid-4",
+        "date": "2/5/2026",
+        "time": "00:08",
+        "ticket": "N/A",
+        "dba": 80,
+        "youtube_id": "-6nCp3dBhEA",
+        "description": "Evento de ruido o recolección indebida registrado con video."
+    },
+    {
         "id": "evt-19",
         "date": "1/5/2026",
         "time": "19:42",
@@ -24,7 +42,7 @@
         "ticket": "N/A",
         "dba": 85.6,
         "youtube_id": "PfhZFV5p7kc",
-        "description": "Medición de decibeles del camión compactador (85.6 dBA)."
+        "description": "Evento de ruido o recolección indebida registrado con video."
     },
     {
         "id": "evt-17",
@@ -85,9 +103,9 @@
         "date": "18/4/2026",
         "time": "05:30",
         "ticket": "N/A",
-        "dba": 95,
+        "dba": 89,
         "youtube_id": "OXpXjX4af_0",
-        "description": "El camión compactador volvió a pasar, sin dejar 4 horas seguidas de descanso."
+        "description": "Evento de ruido o recolección indebida registrado con video."
     },
     {
         "id": "evt-11",
@@ -103,9 +121,9 @@
         "date": "18/4/2026",
         "time": "01:30",
         "ticket": "N/A",
-        "dba": 95,
+        "dba": 89,
         "youtube_id": "eZNkS6g_VSM",
-        "description": "El camión compactador pasó a vaciar los contenedores en medio de la madrugada."
+        "description": "Evento de ruido o recolección indebida registrado con video."
     },
     {
         "id": "evt-10",
