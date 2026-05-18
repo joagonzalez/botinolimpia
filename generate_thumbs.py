@@ -16,7 +16,7 @@ def generate_thumbnails():
         return
 
     for img_name in os.listdir(IMG_LOGS_DIR):
-        if img_name.lower().endswith('.jpg') and not img_name.startswith('thumb_'):
+        if img_name.lower().endswith(('.jpg', '.jpeg')) and not img_name.startswith('thumb_'):
             full_path = os.path.join(IMG_LOGS_DIR, img_name)
             thumb_path = os.path.join(IMG_LOGS_DIR, f"thumb_{img_name}")
             

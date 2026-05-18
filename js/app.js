@@ -62,6 +62,9 @@ async function loadLogs() {
 
 function loadGallery() {
     const images = [
+        "colchon1.jpeg",
+        "colchon2.jpeg",
+        "meo.jpeg",
         "20260410_202250.jpg",
         "20260429_200636.jpg",
         "IMG-20260219-WA0011.jpg",
