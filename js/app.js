@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    updateElapsedTime();
     loadLogs();
     loadGallery();
 });
 
-function updateManifesto(logs) {
+function updateElapsedTime() {
     const startDate = new Date(2026, 0, 27);
     const now = new Date();
 
@@ -17,18 +18,21 @@ function updateManifesto(logs) {
     const parts = [];
     if (months > 0) parts.push(`${months} ${months === 1 ? 'mes' : 'meses'}`);
     if (days > 0 || parts.length === 0) parts.push(`${days} ${days === 1 ? 'día' : 'días'}`);
-    const elapsedText = parts.join(' y ');
 
-    const claimCount = logs.filter(log => {
+    const el = document.getElementById('elapsed-time');
+    if (el) el.textContent = parts.join(' y ');
+}
+
+function updateClaimCount(logs) {
+    const startDate = new Date(2026, 0, 27);
+    const count = logs.filter(log => {
         if (!log.ticket || log.ticket === 'N/A') return false;
         const [d, m, y] = log.date.split('/').map(Number);
         return new Date(y, m - 1, d) >= startDate;
     }).length;
 
-    const elapsedEl = document.getElementById('elapsed-time');
-    const countEl = document.getElementById('claim-count');
-    if (elapsedEl) elapsedEl.textContent = elapsedText;
-    if (countEl) countEl.textContent = claimCount;
+    const el = document.getElementById('claim-count');
+    if (el) el.textContent = count;
 }
 
 async function loadLogs() {
@@ -36,7 +40,7 @@ async function loadLogs() {
         const response = await fetch('data/logs.json');
         const logs = await response.json();
 
-        updateManifesto(logs);
+        updateClaimCount(logs);
 
         const tbody = document.getElementById('logs-body');
 
