@@ -3,10 +3,40 @@ document.addEventListener('DOMContentLoaded', () => {
     loadGallery();
 });
 
+function updateManifesto(logs) {
+    const startDate = new Date(2026, 0, 27);
+    const now = new Date();
+
+    let months = (now.getFullYear() - startDate.getFullYear()) * 12 + (now.getMonth() - startDate.getMonth());
+    let days = now.getDate() - startDate.getDate();
+    if (days < 0) {
+        months--;
+        days += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+    }
+
+    const parts = [];
+    if (months > 0) parts.push(`${months} ${months === 1 ? 'mes' : 'meses'}`);
+    if (days > 0 || parts.length === 0) parts.push(`${days} ${days === 1 ? 'día' : 'días'}`);
+    const elapsedText = parts.join(' y ');
+
+    const claimCount = logs.filter(log => {
+        if (!log.ticket || log.ticket === 'N/A') return false;
+        const [d, m, y] = log.date.split('/').map(Number);
+        return new Date(y, m - 1, d) >= startDate;
+    }).length;
+
+    const elapsedEl = document.getElementById('elapsed-time');
+    const countEl = document.getElementById('claim-count');
+    if (elapsedEl) elapsedEl.textContent = elapsedText;
+    if (countEl) countEl.textContent = claimCount;
+}
+
 async function loadLogs() {
     try {
         const response = await fetch('data/logs.json');
         const logs = await response.json();
+
+        updateManifesto(logs);
 
         const tbody = document.getElementById('logs-body');
 
