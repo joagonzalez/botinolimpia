@@ -21,7 +21,7 @@ Los niveles de ruido registrados oscilan entre 79 y 89 dBA, superando ampliament
 
 1.b. Ruidos diurnos por tapa de contenedor
 
-A la problemática nocturna se suma una fuente adicional de ruido que se extiende durante todo el horario diurno: el golpe repetitivo de las tapas metálicas de los contenedores al abrirse y cerrarse con cada uso. El sonido producido por el impacto es de alta intensidad y ocurre de forma continua a lo largo del día, resultando incompatible con el descanso, el trabajo remoto y la vida cotidiana en el inmueble. Contamos con registro videográfico de este fenómeno (79 dBA medidos con decibelímetro calibrado; video en proceso de carga).
+A la problemática nocturna se suma una fuente adicional de ruido que se extiende durante todo el horario diurno: el golpe repetitivo de las tapas metálicas de los contenedores al abrirse y cerrarse con cada uso. El sonido producido por el impacto es de alta intensidad y ocurre de forma continua a lo largo del día, resultando incompatible con el descanso, el trabajo remoto y la vida cotidiana en el inmueble. Contamos con registro videográfico de esta situación (79 dBA medidos con decibelímetro calibrado; video en proceso de carga).
 
 La combinación de ambas fuentes de ruido —nocturno por recolección y diurno por tapa— configura una afectación ininterrumpida a la calidad de vida de los residentes.
 
@@ -35,10 +35,7 @@ El siguiente material audiovisual documenta los eventos de ruido registrados y s
 - 30/4/2026 21:20 hs — 85.6 dBA — Pasada nocturna camión compactador: https://youtu.be/PfhZFV5p7kc
 - 2/5/2026  00:08 hs — 80 dBA  — Pasada nocturna camión compactador: https://youtu.be/-6nCp3dBhEA
 - 2/5/2026  05:33 hs — 89 dBA  — Pasada nocturna camión compactador: https://youtu.be/ep6idf3lxIA
-- 17/5/2026        — 79 dBA  — Ruido de tapa de contenedor (diurno): en proceso de carga
-
-Se cuenta adicionalmente con grabaciones de las pasadas del 01:30 hs. y 05:30 hs. de fechas recientes, pendientes de carga, que se pondrán a disposición a requerimiento.
-
+- 17/5/2026        — 79 dBA  — Ruido de tapa de contenedor (diurno): https://youtu.be/J-0OQOFoq5c
 
 3. ALTERNATIVAS PROPUESTAS
 
@@ -48,6 +45,8 @@ Alternativa A — Reubicación de los contenedores
 
 Traslado de los contenedores instalados actualmente en la fachada del inmueble a un punto de la vía pública de menor impacto residencial (intersección próxima, zona comercial, centro de transferencia, etc.). Esta es la solución estructural y definitiva, dado que la ubicación actual frente a las ventanas de los dormitorios del primer piso hace inviable el descanso independientemente del horario de recolección.
 
+En Charcas 5218 (misma cuadra, hay un local comercial que hace meses no funciona). Ademas, no tiene primer piso con dormitorios al frente y cumple todos los requisitos de ubicacion.
+
 Alternativa B — Reducción de la frecuencia nocturna de recolección
 
 Revisión y adecuación del recorrido de los camiones compactadores de forma tal que las pasadas frente al domicilio queden limitadas a una (1) por noche, preferentemente en el primer turno (21:30 hs.), eliminando las pasadas de la 01:30 hs. y 05:30 hs. Esta medida, sin requerir inversión en infraestructura, aliviaría sustancialmente el impacto sobre el descanso de los residentes.
@@ -55,8 +54,6 @@ Revisión y adecuación del recorrido de los camiones compactadores de forma tal
 Alternativa C — Reparación y aislamiento acústico de tapas de contenedores
 
 Mantenimiento o reposición de las tapas de los contenedores con mecanismos de amortiguación (gomas, frenos de cierre) que reduzcan el impacto acústico generado por su uso durante el horario diurno. Esta medida atiende específicamente la problemática de ruido continuo durante el día y es complementaria —no sustitutiva— de las anteriores.
-
-Se deja expresa constancia de que la implementación de cualquiera de las tres alternativas propuestas, o una combinación de ellas, sería considerada una respuesta satisfactoria al presente reclamo.
 
 
 4. HISTORIAL DE RECLAMOS SIN RESPUESTA EFECTIVA
@@ -91,8 +88,6 @@ N°  | Fecha      | Ticket / Trámite | Descripción
 24  | 17/5/2026  | 00609548/26      | Reclamo por basura en la calle vía Boti
 25  | 17/5/2026  | 00609571/26      | Reclamo por arreglo de tapa de contenedor vía Boti
 
-Los números de trámite aquí consignados son verificables públicamente en el portal BA Colaborativa (https://bacolaborativa.buenosaires.gob.ar/).
-
 
 5. PETICIÓN
 
@@ -100,7 +95,7 @@ En virtud de lo expuesto, y atento a la gravedad e irreversibilidad del daño a 
 
 1. Respuesta formal y fundada al presente reclamo en el plazo establecido por la normativa vigente.
 
-2. La implementación de alguna de las tres (3) alternativas detalladas en la Sección 3, o combinación de ellas, en un plazo razonable y con comunicación fehaciente de la solución adoptada.
+2. La implementación de alguna combinación de las tres (3) alternativas detalladas en la Sección 3 que de solucion a los inconvenientes detallados, en un plazo razonable y con comunicación fehaciente de la solución adoptada.
 
 3. En caso de que ninguna de las alternativas sea técnica u operativamente viable, se solicita se indique expresamente los motivos, a efectos de proceder con las instancias correspondientes ante la Defensoría del Pueblo, el Ente Regulador y el Ministerio Público Fiscal de CABA.
 
