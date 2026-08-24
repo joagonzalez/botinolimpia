@@ -25,14 +25,24 @@ function updateElapsedTime() {
 
 function updateClaimCount(logs) {
     const startDate = new Date(2026, 0, 27);
-    const count = logs.filter(log => {
-        if (!log.ticket || log.ticket === 'N/A') return false;
+    const since = log => {
         const [d, m, y] = log.date.split('/').map(Number);
         return new Date(y, m - 1, d) >= startDate;
+    };
+
+    const claims = logs.filter(log => {
+        if (log.type === '911') return false;
+        if (!log.ticket || log.ticket === 'N/A') return false;
+        return since(log);
     }).length;
 
-    const el = document.getElementById('claim-count');
-    if (el) el.textContent = count;
+    const calls = logs.filter(log => log.type === '911' && since(log)).length;
+
+    const elClaims = document.getElementById('claim-count');
+    if (elClaims) elClaims.textContent = claims;
+
+    const elCalls = document.getElementById('calls-911-count');
+    if (elCalls) elCalls.textContent = calls;
 }
 
 async function loadLogs() {
@@ -59,7 +69,11 @@ async function loadLogs() {
 
             // Ticket
             const tdTicket = document.createElement('td');
-            tdTicket.innerHTML = log.ticket !== "N/A" ? `<strong>${log.ticket}</strong>` : `<span class="empty">N/A</span>`;
+            if (log.type === '911') {
+                tdTicket.innerHTML = `<span class="badge badge-alert">Llamada 911</span>`;
+            } else {
+                tdTicket.innerHTML = log.ticket !== "N/A" ? `<strong>${log.ticket}</strong>` : `<span class="empty">N/A</span>`;
+            }
             tr.appendChild(tdTicket);
 
             // dBA

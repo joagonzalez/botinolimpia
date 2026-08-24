@@ -1,12 +1,213 @@
 [
     {
+        "id": "evt-38",
+        "date": "23/8/2026",
+        "time": "",
+        "ticket": "00924965/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por reparación de vereda reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-39",
+        "date": "23/8/2026",
+        "time": "",
+        "ticket": "00925794/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-911-7",
+        "date": "17/8/2026",
+        "time": "19:32",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores en horario nocturno. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-911-6",
+        "date": "15/8/2026",
+        "time": "14:58",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-36",
+        "date": "14/8/2026",
+        "time": "",
+        "ticket": "00900885/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-37",
+        "date": "14/8/2026",
+        "time": "",
+        "ticket": "00901123/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por irregularidades en la separación de residuos en origen reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-911-5",
+        "date": "10/8/2026",
+        "time": "23:46",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores en horario nocturno. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-911-4",
+        "date": "8/8/2026",
+        "time": "19:20",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores en horario nocturno. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-35",
+        "date": "1/8/2026",
+        "time": "",
+        "ticket": "00853116/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-34",
+        "date": "30/7/2026",
+        "time": "",
+        "ticket": "00848384/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-33",
+        "date": "29/7/2026",
+        "time": "",
+        "ticket": "00844437/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-911-3",
+        "date": "27/7/2026",
+        "time": "20:16",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores en horario nocturno. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-32",
+        "date": "27/7/2026",
+        "time": "",
+        "ticket": "00836815/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-911-2",
+        "date": "22/7/2026",
+        "time": "05:24",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores durante la madrugada. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-911-1",
+        "date": "18/7/2026",
+        "time": "03:08",
+        "ticket": "N/A",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Llamada al 911 por grupo de personas reunidas alrededor de los contenedores durante la madrugada. Situación de inseguridad frente al domicilio.",
+        "type": "911"
+    },
+    {
+        "id": "evt-31",
+        "date": "28/6/2026",
+        "time": "",
+        "ticket": "00748925/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-30",
+        "date": "26/5/2026",
+        "time": "",
+        "ticket": "00640402/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-29",
+        "date": "24/5/2026",
+        "time": "",
+        "ticket": "00633817/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-28",
+        "date": "20/5/2026",
+        "time": "",
+        "ticket": "00623979/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-27",
+        "date": "18/5/2026",
+        "time": "",
+        "ticket": "00615561/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
+    },
+    {
         "id": "evt-26",
         "date": "17/5/2026",
         "time": "",
         "ticket": "00609571/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por arreglo de tapa de contenedor reportado vía Boti"
+        "description": "Reclamo por arreglo de tapa de contenedor reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-vid-6",
@@ -15,7 +216,8 @@
         "ticket": "N/A",
         "dba": 79,
         "youtube_id": "J-0OQOFoq5c",
-        "description": "Ruido de tapa de contenedor registrado con decibelímetro."
+        "description": "Ruido de tapa de contenedor registrado con decibelímetro.",
+        "type": "video"
     },
     {
         "id": "evt-25",
@@ -24,7 +226,8 @@
         "ticket": "00609548/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por basura en la calle reportado vía Boti"
+        "description": "Reclamo por basura en la calle reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-24",
@@ -33,7 +236,8 @@
         "ticket": "00599889/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti"
+        "description": "Reclamo por recolección de residuos fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-23",
@@ -42,7 +246,8 @@
         "ticket": "00596290/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por reparación de contenedor reportado vía Boti"
+        "description": "Reclamo por reparación de contenedor reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-22",
@@ -51,7 +256,8 @@
         "ticket": "00596281/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por basura desparramada fuera del contenedor reportado vía Boti"
+        "description": "Reclamo por basura desparramada fuera del contenedor reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-21",
@@ -60,7 +266,8 @@
         "ticket": "00570160/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por reubicación de contenedor reportado vía Boti"
+        "description": "Reclamo por reubicación de contenedor reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-20",
@@ -69,7 +276,8 @@
         "ticket": "00558309/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-vid-5",
@@ -78,7 +286,8 @@
         "ticket": "N/A",
         "dba": 89,
         "youtube_id": "ep6idf3lxIA",
-        "description": "Evento de ruido o recolección indebida registrado con video."
+        "description": "Evento de ruido o recolección indebida registrado con video.",
+        "type": "video"
     },
     {
         "id": "evt-vid-4",
@@ -87,7 +296,8 @@
         "ticket": "N/A",
         "dba": 80,
         "youtube_id": "-6nCp3dBhEA",
-        "description": "Evento de ruido o recolección indebida registrado con video."
+        "description": "Evento de ruido o recolección indebida registrado con video.",
+        "type": "video"
     },
     {
         "id": "evt-19",
@@ -96,7 +306,8 @@
         "ticket": "00556082/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-18",
@@ -105,7 +316,8 @@
         "ticket": "00554364/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-vid-3",
@@ -114,7 +326,8 @@
         "ticket": "N/A",
         "dba": 85.6,
         "youtube_id": "PfhZFV5p7kc",
-        "description": "Evento de ruido o recolección indebida registrado con video."
+        "description": "Evento de ruido o recolección indebida registrado con video.",
+        "type": "video"
     },
     {
         "id": "evt-17",
@@ -123,7 +336,8 @@
         "ticket": "00549283/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-16",
@@ -132,7 +346,8 @@
         "ticket": "00531267/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-15",
@@ -141,7 +356,8 @@
         "ticket": "00522849/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-14",
@@ -150,7 +366,8 @@
         "ticket": "00518147/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-13",
@@ -159,7 +376,8 @@
         "ticket": "00503976/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-12",
@@ -168,7 +386,8 @@
         "ticket": "00500107/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-vid-2",
@@ -177,7 +396,8 @@
         "ticket": "N/A",
         "dba": 89,
         "youtube_id": "OXpXjX4af_0",
-        "description": "Evento de ruido o recolección indebida registrado con video."
+        "description": "Evento de ruido o recolección indebida registrado con video.",
+        "type": "video"
     },
     {
         "id": "evt-11",
@@ -186,7 +406,8 @@
         "ticket": "00496407/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-vid-1",
@@ -195,7 +416,8 @@
         "ticket": "N/A",
         "dba": 89,
         "youtube_id": "eZNkS6g_VSM",
-        "description": "Evento de ruido o recolección indebida registrado con video."
+        "description": "Evento de ruido o recolección indebida registrado con video.",
+        "type": "video"
     },
     {
         "id": "evt-10",
@@ -204,7 +426,8 @@
         "ticket": "00480227/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-9",
@@ -213,7 +436,8 @@
         "ticket": "00466062/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-8",
@@ -222,7 +446,8 @@
         "ticket": "00464568/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-7",
@@ -231,7 +456,8 @@
         "ticket": "00461769/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-6",
@@ -240,7 +466,8 @@
         "ticket": "00431883/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-5",
@@ -249,7 +476,8 @@
         "ticket": "00222697/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-4",
@@ -258,7 +486,8 @@
         "ticket": "00222666/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-3",
@@ -267,7 +496,8 @@
         "ticket": "00114830/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     },
     {
         "id": "evt-2",
@@ -276,6 +506,7 @@
         "ticket": "01255685/25",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo reportado vía Boti"
+        "description": "Reclamo reportado vía Boti",
+        "type": "reclamo"
     }
 ]

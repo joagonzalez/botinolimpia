@@ -200,6 +200,11 @@ td.empty {
     color: white;
 }
 
+.badge-alert {
+    background-color: #1f7ae0;
+    color: white;
+}
+
 /* Footer */
 footer {
     text-align: center;
