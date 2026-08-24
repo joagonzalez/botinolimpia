@@ -47,7 +47,8 @@ function updateClaimCount(logs) {
 
 async function loadLogs() {
     try {
-        const response = await fetch('data/logs.json');
+        // cache-buster: la bitacora cambia seguido y Pages sirve max-age=14400
+        const response = await fetch(`data/logs.json?v=${Date.now()}`, { cache: 'no-store' });
         const logs = await response.json();
 
         updateClaimCount(logs);
