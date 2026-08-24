@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de los reclamos | BotiNoLimpia</title>
+    <meta name="description" content="Evolución acumulada de los reclamos ingresados ante el Gobierno de la Ciudad y de las llamadas al 911 por inseguridad en torno a los contenedores.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20260824">
+    <style>
+        .viz-root {
+            /* Slots categoricos validados para superficie oscura #222222
+               (validate_palette.js --mode dark: todos los checks PASS) */
+            --series-1: #3987e5;
+            --series-2: #d95926;
+            --surface-1: #222222;
+            --grid: #333333;
+            --text-secondary: #b9b9b3;
+            --text-muted: #8a8a84;
+        }
+
+        .subhead {
+            background-color: var(--caba-yellow);
+            color: var(--caba-black);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border-bottom: 8px solid var(--caba-black);
+        }
+        .subhead h1 {
+            font-size: 2.75rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+        .subhead p { font-weight: 700; margin-top: 0.5rem; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--caba-yellow);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* --- Cifras --- */
+        .stats { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: flex-end; }
+        .hero-figure { flex: 0 0 auto; }
+        .hero-figure .value {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--caba-yellow);
+        }
+        .stat { flex: 1 1 150px; min-width: 150px; }
+        .stat .value { font-size: 2rem; font-weight: 700; line-height: 1.2; }
+        .label { color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.35rem; }
+
+        /* --- Grafico --- */
+        .chart-head {
+            display: flex; flex-wrap: wrap; gap: 1rem;
+            justify-content: space-between; align-items: baseline;
+            margin-bottom: 1.25rem;
+        }
+        .legend { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .legend-item {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            color: var(--text-secondary); font-size: 0.9rem;
+        }
+        .chart-wrap { position: relative; }
+        #chart { width: 100%; height: auto; display: block; overflow: visible; }
+        #chart:focus-visible { outline: 2px solid var(--caba-yellow); outline-offset: 4px; }
+
+        .grid-line { stroke: var(--grid); stroke-width: 1; }
+        .axis-rule { stroke: #3d3d3d; stroke-width: 1; }
+        .tick { fill: var(--text-muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+        .tick-y { text-anchor: end; }
+        .tick-x { text-anchor: middle; }
+        .tick-year { fill: #6f6f6a; font-weight: 700; }
+
+        .milestone-rule { stroke: var(--caba-yellow); stroke-width: 1; opacity: 0.45; }
+        .milestone-label { fill: var(--text-secondary); font-size: 11px; font-weight: 700; }
+
+        .serie-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+        .serie-dot { stroke: var(--surface-1); stroke-width: 2; }
+        .hover-dot { stroke: var(--surface-1); stroke-width: 2; pointer-events: none; }
+        .s1 { stroke: var(--series-1); }
+        .s1.serie-dot, .s1.hover-dot { fill: var(--series-1); }
+        .s2 { stroke: var(--series-2); }
+        .s2.serie-dot, .s2.hover-dot { fill: var(--series-2); }
+
+        .end-value { fill: var(--text-light); font-size: 22px; font-weight: 900; }
+        .end-label { fill: var(--text-secondary); font-size: 12px; }
+        .crosshair { stroke: #5a5a55; stroke-width: 1; pointer-events: none; }
+        .hit-area { cursor: crosshair; }
+
+        #tooltip {
+            position: absolute; top: 0; pointer-events: none;
+            background: #111111; border: 1px solid #3d3d3d; border-radius: 4px;
+            padding: 0.6rem 0.75rem; font-size: 0.85rem; min-width: 150px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+        }
+        .tt-date { color: var(--text-muted); font-size: 0.78rem; margin-bottom: 0.4rem; }
+        .tt-row { display: flex; align-items: center; gap: 0.45rem; line-height: 1.7; }
+        .tt-row strong { font-size: 1rem; font-variant-numeric: tabular-nums; }
+        .tt-row span { color: var(--text-secondary); }
+
+        .chart-note { color: var(--text-muted); font-size: 0.85rem; margin-top: 1.25rem; }
+        .table-toggle {
+            margin-top: 1.5rem; background: none; font: inherit; font-weight: 700;
+            color: var(--caba-yellow); border: 1px solid #3d3d3d; border-radius: 3px;
+            padding: 0.5rem 0.9rem; cursor: pointer;
+        }
+        .table-toggle:hover { border-color: var(--caba-yellow); }
+        #evolucion-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+        #chart-error { color: var(--glitch-red); font-weight: 700; }
+
+        @media (max-width: 700px) {
+            .subhead h1 { font-size: 1.9rem; }
+            .hero-figure .value { font-size: 3.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="subhead">
+        <h1>Evolución de los reclamos</h1>
+        <p>Bitácora de la desidia · Palermo, CABA</p>
+    </header>
+
+    <main class="container viz-root">
+        <a class="back-link" href="index.html">← Volver a la bitácora</a>
+
+        <section class="card">
+            <h3>El expediente en números</h3>
+            <div class="stats">
+                <div class="hero-figure">
+                    <div class="value" id="hero-value">—</div>
+                    <div class="label">Reclamos ingresados vía Boti / SUACI desde nov. 2025</div>
+                </div>
+                <div class="stat">
+                    <div class="value" id="stat-911">—</div>
+                    <div class="label">Llamadas al 911 por inseguridad</div>
+                </div>
+                <div class="stat">
+                    <div class="value" id="stat-dias">—</div>
+                    <div class="label">Días desde el primer reclamo registrado</div>
+                </div>
+                <div class="stat">
+                    <div class="value" id="stat-dba">—</div>
+                    <div class="label" id="stat-dba-label">Pico registrado con decibelímetro</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="chart-head">
+                <h3 style="margin-bottom:0">Acumulado en el tiempo</h3>
+                <div class="legend" id="legend"></div>
+            </div>
+
+            <div class="chart-wrap">
+                <svg id="chart" role="img" tabindex="0"
+                     aria-label="Gráfico acumulado de reclamos ingresados y llamadas al 911 desde noviembre de 2025. Use las flechas izquierda y derecha para recorrer las fechas."></svg>
+                <div id="tooltip" role="status" aria-live="polite" aria-hidden="true" hidden></div>
+            </div>
+
+            <p id="chart-error" hidden>No se pudieron cargar los datos de la bitácora.</p>
+
+            <p class="chart-note">
+                Cada línea sólo puede subir: acumula los reclamos y las llamadas ingresadas hasta esa fecha.
+                Un tramo horizontal no significa que el problema se haya resuelto, sino que no se registraron
+                nuevos ingresos en ese período. Los tickets pueden verificarse en
+                <a href="https://bacolaborativa.buenosaires.gob.ar/" target="_blank" style="color: var(--caba-yellow)">BA Colaborativa</a>.
+            </p>
+
+            <button class="table-toggle" id="table-toggle" aria-expanded="false" aria-controls="evolucion-table">
+                Ver los datos en tabla
+            </button>
+
+            <div class="table-responsive" id="evolucion-table" hidden>
+                <table>
+                    <caption class="visually-hidden">Reclamos y llamadas al 911 por mes, con su acumulado</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Mes</th>
+                            <th scope="col">Reclamos</th>
+                            <th scope="col">Acum.</th>
+                            <th scope="col">Llamadas 911</th>
+                            <th scope="col">Acum.</th>
+                        </tr>
+                    </thead>
+                    <tbody id="evolucion-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Documentación ciudadana | Palermo, CABA.</p>
+        <p style="margin-top: 10px;">Seguinos en X: <a href="https://x.com/BotiNoLimpiaBA" target="_blank" style="color: var(--caba-yellow); text-decoration: none; font-weight: bold;">@BotiNoLimpiaBA</a></p>
+    </footer>
+
+    <script src="js/evolucion.js?v=20260824"></script>
+    <script>
+        const toggle = document.getElementById('table-toggle');
+        const tableWrap = document.getElementById('evolucion-table');
+        toggle.addEventListener('click', () => {
+            const open = tableWrap.hidden;
+            tableWrap.hidden = !open;
+            toggle.setAttribute('aria-expanded', String(open));
+            toggle.textContent = open ? 'Ocultar la tabla' : 'Ver los datos en tabla';
+        });
+    </script>
+</body>
+</html>

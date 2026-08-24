@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir dist
           cp index.html dist/
+          cp evolucion.html dist/
           cp -r css dist/
           cp -r js dist/
           cp -r assets dist/
