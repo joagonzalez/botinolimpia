@@ -31,18 +31,22 @@ function updateClaimCount(logs) {
     };
 
     const claims = logs.filter(log => {
-        if (log.type === '911') return false;
+        if (log.type === '911' || log.type === '108') return false;
         if (!log.ticket || log.ticket === 'N/A') return false;
         return since(log);
     }).length;
 
     const calls = logs.filter(log => log.type === '911' && since(log)).length;
+    const calls108 = logs.filter(log => log.type === '108' && since(log)).length;
 
     const elClaims = document.getElementById('claim-count');
     if (elClaims) elClaims.textContent = claims;
 
     const elCalls = document.getElementById('calls-911-count');
     if (elCalls) elCalls.textContent = calls;
+
+    const el108 = document.getElementById('calls-108-count');
+    if (el108) el108.textContent = calls108 === 1 ? '1 solicitud' : `${calls108} solicitudes`;
 }
 
 async function loadLogs() {
@@ -72,6 +76,8 @@ async function loadLogs() {
             const tdTicket = document.createElement('td');
             if (log.type === '911') {
                 tdTicket.innerHTML = `<span class="badge badge-alert">Llamada 911</span>`;
+            } else if (log.type === '108') {
+                tdTicket.innerHTML = `<span class="badge badge-social">Línea 108</span> <strong>${log.ticket}</strong>`;
             } else {
                 tdTicket.innerHTML = log.ticket !== "N/A" ? `<strong>${log.ticket}</strong>` : `<span class="empty">N/A</span>`;
             }

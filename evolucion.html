@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolución de los reclamos | BotiNoLimpia</title>
-    <meta name="description" content="Evolución acumulada de los reclamos ingresados ante el Gobierno de la Ciudad y de las llamadas al 911 por inseguridad en torno a los contenedores.">
+    <meta name="description" content="Evolución acumulada de los reclamos ingresados ante el Gobierno de la Ciudad y de las llamadas al 911 y solicitudes a la línea 108 en torno a los contenedores.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=20260824">
+    <link rel="stylesheet" href="css/style.css?v=20260926">
     <style>
         .viz-root {
             /* Slots categoricos validados para superficie oscura #222222
                (validate_palette.js --mode dark: todos los checks PASS) */
             --series-1: #3987e5;
             --series-2: #d95926;
+            --series-3: #199e70;
             --surface-1: #222222;
             --grid: #333333;
             --text-secondary: #b9b9b3;
@@ -88,6 +89,8 @@
         .s1.serie-dot, .s1.hover-dot { fill: var(--series-1); }
         .s2 { stroke: var(--series-2); }
         .s2.serie-dot, .s2.hover-dot { fill: var(--series-2); }
+        .s3 { stroke: var(--series-3); }
+        .s3.serie-dot, .s3.hover-dot { fill: var(--series-3); }
 
         .end-value { fill: var(--text-light); font-size: 22px; font-weight: 900; }
         .end-label { fill: var(--text-secondary); font-size: 12px; }
@@ -142,6 +145,10 @@
                     <div class="label">Llamadas al 911 por inseguridad</div>
                 </div>
                 <div class="stat">
+                    <div class="value" id="stat-108">—</div>
+                    <div class="label">Solicitudes a la línea 108 por personas en situación de calle</div>
+                </div>
+                <div class="stat">
                     <div class="value" id="stat-dias">—</div>
                     <div class="label">Días desde el primer reclamo registrado</div>
                 </div>
@@ -160,14 +167,14 @@
 
             <div class="chart-wrap">
                 <svg id="chart" role="img" tabindex="0"
-                     aria-label="Gráfico acumulado de reclamos ingresados y llamadas al 911 desde noviembre de 2025. Use las flechas izquierda y derecha para recorrer las fechas."></svg>
+                     aria-label="Gráfico acumulado de reclamos ingresados, llamadas al 911 y solicitudes a la línea 108 desde noviembre de 2025. Use las flechas izquierda y derecha para recorrer las fechas."></svg>
                 <div id="tooltip" role="status" aria-live="polite" aria-hidden="true" hidden></div>
             </div>
 
             <p id="chart-error" hidden>No se pudieron cargar los datos de la bitácora.</p>
 
             <p class="chart-note">
-                Cada línea sólo puede subir: acumula los reclamos y las llamadas ingresadas hasta esa fecha.
+                Cada línea sólo puede subir: acumula los reclamos, las llamadas y las solicitudes ingresadas hasta esa fecha.
                 Un tramo horizontal no significa que el problema se haya resuelto, sino que no se registraron
                 nuevos ingresos en ese período. Los tickets pueden verificarse en
                 <a href="https://bacolaborativa.buenosaires.gob.ar/" target="_blank" style="color: var(--caba-yellow)">BA Colaborativa</a>.
@@ -179,13 +186,15 @@
 
             <div class="table-responsive" id="evolucion-table" hidden>
                 <table>
-                    <caption class="visually-hidden">Reclamos y llamadas al 911 por mes, con su acumulado</caption>
+                    <caption class="visually-hidden">Reclamos, llamadas al 911 y solicitudes al 108 por mes, con su acumulado</caption>
                     <thead>
                         <tr>
                             <th scope="col">Mes</th>
                             <th scope="col">Reclamos</th>
                             <th scope="col">Acum.</th>
                             <th scope="col">Llamadas 911</th>
+                            <th scope="col">Acum.</th>
+                            <th scope="col">Línea 108</th>
                             <th scope="col">Acum.</th>
                         </tr>
                     </thead>
@@ -200,7 +209,7 @@
         <p style="margin-top: 10px;">Seguinos en X: <a href="https://x.com/BotiNoLimpiaBA" target="_blank" style="color: var(--caba-yellow); text-decoration: none; font-weight: bold;">@BotiNoLimpiaBA</a></p>
     </footer>
 
-    <script src="js/evolucion.js?v=20260824"></script>
+    <script src="js/evolucion.js?v=20260926"></script>
     <script>
         const toggle = document.getElementById('table-toggle');
         const tableWrap = document.getElementById('evolucion-table');

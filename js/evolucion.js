@@ -1,4 +1,4 @@
-/* Grafico acumulado de reclamos y llamadas al 911.
+/* Grafico acumulado de reclamos, llamadas al 911 y solicitudes a la linea 108.
    SVG inline, sin dependencias externas. Datos: data/logs.json */
 
 const NS = 'http://www.w3.org/2000/svg';
@@ -9,7 +9,8 @@ const MONTHS_LONG = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
 
 const SERIES = [
     { key: 'reclamo', label: 'Reclamos ingresados', cls: 's1', unit: ['reclamo', 'reclamos'] },
-    { key: '911', label: 'Llamadas al 911', cls: 's2', unit: ['llamada al 911', 'llamadas al 911'] }
+    { key: '911', label: 'Llamadas al 911', cls: 's2', unit: ['llamada al 911', 'llamadas al 911'] },
+    { key: '108', label: 'Solicitudes al 108', cls: 's3', unit: ['solicitud al 108', 'solicitudes al 108'] }
 ];
 
 // Hitos anotados sobre el eje temporal
@@ -108,6 +109,7 @@ function renderStats(logs, m) {
 
     document.getElementById('hero-value').textContent = reclamos;
     document.getElementById('stat-911').textContent = llamadas;
+    document.getElementById('stat-108').textContent = m.series[2].total;
     document.getElementById('stat-dias').textContent = dias;
     document.getElementById('stat-dba').textContent = dbas.length
         ? `${Math.max(...dbas)} dBA`
@@ -313,24 +315,20 @@ function renderTable(m) {
         s.times.forEach(t => {
             const d = new Date(t);
             const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
-            if (!buckets.has(key)) buckets.set(key, { key, d: new Date(d.getFullYear(), d.getMonth(), 1), n: [0, 0] });
+            if (!buckets.has(key)) buckets.set(key, { key, d: new Date(d.getFullYear(), d.getMonth(), 1), n: m.series.map(() => 0) });
             buckets.get(key).n[si]++;
         });
     });
 
     const rows = [...buckets.values()].sort((a, b) => a.d - b.d);
-    const acc = [0, 0];
+    const acc = m.series.map(() => 0);
     rows.forEach(r => {
-        acc[0] += r.n[0];
-        acc[1] += r.n[1];
         const tr = document.createElement('tr');
-        const cells = [
-            `${MONTHS_LONG[r.d.getMonth()]} ${r.d.getFullYear()}`,
-            r.n[0] || '—',
-            acc[0],
-            r.n[1] || '—',
-            acc[1]
-        ];
+        const cells = [`${MONTHS_LONG[r.d.getMonth()]} ${r.d.getFullYear()}`];
+        r.n.forEach((n, i) => {
+            acc[i] += n;
+            cells.push(n || '—', acc[i]);
+        });
         cells.forEach((c, i) => {
             const td = document.createElement('td');
             td.textContent = c;
