@@ -1,5 +1,15 @@
 [
     {
+        "id": "evt-47",
+        "date": "26/9/2026",
+        "time": "",
+        "ticket": "01054039/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Iniciada.",
+        "type": "reclamo"
+    },
+    {
         "id": "evt-108-1",
         "date": "26/9/2026",
         "time": "",
