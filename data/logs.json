@@ -1,5 +1,25 @@
 [
     {
+        "id": "evt-49",
+        "date": "29/9/2026",
+        "time": "",
+        "ticket": "01064938/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Iniciada.",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-48",
+        "date": "29/9/2026",
+        "time": "",
+        "ticket": "01064935/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por lavado de contenedor en Charcas 5246 reportado vía Boti: personas en situación de calle defecan dentro del contenedor. Situación de insalubridad frente al domicilio. Estado: Cerrado - Reporte.",
+        "type": "reclamo"
+    },
+    {
         "id": "evt-47",
         "date": "26/9/2026",
         "time": "",
