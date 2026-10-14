@@ -1,12 +1,42 @@
 [
     {
+        "id": "evt-53",
+        "date": "14/10/2026",
+        "time": "",
+        "ticket": "01115063/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Iniciada.",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-52",
+        "date": "13/10/2026",
+        "time": "",
+        "ticket": "01110408/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Cumplido.",
+        "type": "reclamo"
+    },
+    {
+        "id": "evt-51",
+        "date": "5/10/2026",
+        "time": "",
+        "ticket": "01086740/26",
+        "dba": null,
+        "youtube_id": null,
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Cumplido.",
+        "type": "reclamo"
+    },
+    {
         "id": "evt-50",
         "date": "2/10/2026",
         "time": "",
         "ticket": "01076483/26",
         "dba": null,
         "youtube_id": null,
-        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Iniciada.",
+        "description": "Reclamo por recolección de residuos fuera del contenedor en Charcas 5246 reportado vía Boti. Estado: Cumplido.",
         "type": "reclamo"
     },
     {
